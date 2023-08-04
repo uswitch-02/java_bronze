@@ -56,3 +56,29 @@
 // これは初期化なのでコンパイルえらーにならない
 // num = 10;
 // これはコンパイルエラー
+
+
+// 2-2
+// 算術演算子
+public class Hello {
+  public static void main (String[] args) {
+    int a = 10;
+    // aを10で初期化
+    int b =20;
+    // bを20を初期化
+    int c = a + b
+    // aとbの値を足した結果をcに代入
+    System.out.println(c);
+    // cの値を表示
+  }
+}
+
+// 四則演算にはない剰余算を行うための「％」があります。
+
+public class Hello {
+  public static void main(String[] args) {
+    int a = 10;
+    System.out.println(a % 3);
+    // aの値を３で割った余りを
+  }
+}
