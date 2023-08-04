@@ -79,6 +79,121 @@ public class Hello {
   public static void main(String[] args) {
     int a = 10;
     System.out.println(a % 3);
-    // aの値を３で割った余りを
+    // aの値を３で割った余りを表示
   }
 }
+
+public class Hello {
+  public static void main(String[] args) {
+    int a = 10;
+    int b = 20;
+    int c = 30;
+    int d = a + b + c;
+    // 結果は６０
+    System.out.println(d);
+  }
+}
+
+// javaの算術演算子の優先順位は数学と同じで、掛け算(*),
+// 割り算(/),余剰算(%),の方が足し算(+)引き算(-)よりも優先度が高くなります。
+
+public class Hello {
+  public static void main (String[] args) {
+    int a = 10;
+    int b = 20;
+    int c = 30;
+    int d = a + b * c;
+    System.out.println(d);
+  }
+}
+
+// 優先順位を変えたいときは、数学と同じように()を使います。
+
+int d =(a + b) * c;
+// 結果は９００
+
+
+文字列連結のための＋演算子
+文字列連結とは２つ以上の文字列があった時、それらを＋演算子で足して文字列を１つにつなげることです。
+
+public class Hello {
+  public static void main (String[] args) {
+    String a = "Hello, ";
+    // カンマの後ろはスペース１つを入れる
+    String b ="Java";
+    String result = a + b + "!";
+    // 文字列を連結し、resultに代入
+    System.out.println(result);
+    // 連結された１つの文字列を表示
+  }
+}
+
+
+piblic class Hello {
+  public static void main(String[] args) {
+    String a = "$";
+    // 文字列「＄」をaに代入
+    System.out.println(a + 10 + 10);
+    // +演算子を使って足している
+  }
+}
+
+public class Hello {
+  public static void main(String[] args) {
+    String a ="yen";
+    System.out.println(10 + 10 + a);
+  }
+}
+
+インクリメントとデクリメント
+int a = 10;
+int b =10;
+a =a + 1;
+b = b - 1;
+
+インクリメント演算子「++」やデクリメント演算子「--]
+int a = 10;
+int b = 10;
+a++;
+// 変数aの値は１１になる
+b--;
+// 変数ｂの値は９になる
+インクリメント演算子とデクリメント演算子は変数の前あるいは
+後ろに置きます。
+前に置いた場合は「前置」、後ろに置いた場合は「後置」といいます。
+前置と後置では、動作が異なる。
+
+public class Hello {
+  public static void main(String[] args) {
+    int a = 10;
+    int b = a++;
+    // 後置のインクリメント
+    int c = ++a;
+    // 前置のインクリメント
+    System.out.println(b);
+    // 結果は10と
+    System.out.println(c);
+    // 結果は12
+  }
+}
+
+インクリメント演算子を前置する。前置した場合変数aの値に１を加えた後、その値が変数bに
+代入されます。
+
+
+
+
+public class Hello {
+  public static void main(String[] args){
+    int a = 10;
+    int b = ++a;
+    System.out.println(b);
+    // 11が表示される
+    
+  }
+}
+
+動作の動き
+①変数の値をコピーする
+②変数の値を増やす
+③①でコピーしておいた値を戻す。
