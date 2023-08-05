@@ -189,7 +189,7 @@ public class Hello {
     int b = ++a;
     System.out.println(b);
     // 11が表示される
-    
+
   }
 }
 
@@ -200,3 +200,24 @@ public class Hello {
 
 前置・後置の違いは、変数bに代入されるのが、変更後の値（前置）なのか、変更前の値（後置）なのか
 という点が異なります。
+
+
+変換型とキャスト
+public class Hello {
+  public static void main (String[] args) {
+    int s = 10;
+    // ing型で初期化
+    long b = 20 ;
+    // long型で初期化
+    System.out.println(a + b);
+    // 異なる型同士の演算はコンパイルエラー
+    
+  }
+}
+異なる演算ができない理由は、ビットが合わないから
+int型は３２ビット、long型は６４ビットだから、int型のへんすうの値は３２びっとぶんでーたが
+足りないことになります。
+
+暗黙のかた変換が行われます。int型とlong型の演算は、long型の方に合わせられる。
+
+大きい方から小さい方へのかた変換はプログラマーがキャストする。⇒明示的な型変換
