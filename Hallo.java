@@ -211,7 +211,7 @@ public class Hello {
     // long型で初期化
     System.out.println(a + b);
     // 異なる型同士の演算はコンパイルエラー
-    
+
   }
 }
 異なる演算ができない理由は、ビットが合わないから
@@ -221,3 +221,12 @@ int型は３２ビット、long型は６４ビットだから、int型のへん�
 暗黙のかた変換が行われます。int型とlong型の演算は、long型の方に合わせられる。
 
 大きい方から小さい方へのかた変換はプログラマーがキャストする。⇒明示的な型変換
+
+順次、分岐、反復の３つの構文を組み合わせた構造化プログラミングが主流
+public class IfTest {
+  public static void main (String[] args) {
+    if (true) {
+      System.out.println("Hello.") ;
+    }
+  }
+}
